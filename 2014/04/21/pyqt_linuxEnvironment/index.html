@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>在Linux下配置PyQt4开发环境 | Fiona&#39;s blog</title>
+  <meta name="author" content="Fiona Tang">
+
+  
+  <meta name="description" content="Tech Blog">
+  
+  
+
+  <link rel="alternate" href="/atom.xml" title="Fiona&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+<body>
+  <header id="header" class="inner"><nav>
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+  </ul>
+</nav></header>
+  <div id="content" class="inner"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title">在Linux下配置PyQt4开发环境</h1>
+  
+
+    <time datetime="2014-04-21T20:41:06.000Z">
+  <span class="day">21</span><span class="month">Apr</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>虽然PyQt是跨平台的，但是为了确保Linux的100%兼容性，<br>把之前在mac下开发的PyQt4项目移入Linux系统。<br>在Linux下配置PyQt4开发环境，其中包括安装依赖关系，PyQt，Eclipse，<br>以及在Eclipse中配置python开发环境。</p>
+<a id="more"></a>
+<p>##sip编译和安装<br>安装PyQt4前需要先安装sip。从网络上下载压缩包解压，运行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo python configure.py</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure></p>
+<p>##安装依赖的库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libxext6 libxext-dev libqt4-dev libqt4-gui libqt4-sql qt4-dev-tools qt4-doc qt4-designer qt4-qtconfig</span><br></pre></td></tr></table></figure></p>
+<p>##PyQt4的编译和安装<br>下载压缩包解压<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo python configure.py</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure></p>
+<p>##Eclipse安装<br>下载安装包解压</p>
+<p>##PyDev安装<br>用eclipse自带的install new software安装，配置一下python的路径。</p>
+
+    
+    
+    <footer class="meta">
+      
+  <div class="cats">
+<a href="/categories/PyQt/">PyQt</a></div>
+
+      
+  <div class="tags">
+<a href="/tags/PyQt/">PyQt</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+<section id="comment">
+  <div id="disqus_thread" aria-live="polite">
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</article></div>
+  <footer id="footer" class="inner"><div class="social alignright">
+  
+  
+  
+  
+  <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+</div>
+<p>
+  
+  &copy; 2016 Fiona Tang
+  
+</p>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'tangfiona';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="phasebeam">
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+</div>
+<script src="/js/phasebeam.js"></script>
+</body>
+</html>
