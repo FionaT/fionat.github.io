@@ -70,6 +70,13 @@
 <p>example:</p>
 <p>Set the owner of file.rtf to mary<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown mary file.rtf</span><br></pre></td></tr></table></figure></p>
 <p>Recursively grant ownership of the directory /dir/subdir and all files and subdirectories to user mary<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -R mary /dir/subdir</span><br></pre></td></tr></table></figure></p>
+<h1 id="Count-files-number-under-certain-directory"><a href="#Count-files-number-under-certain-directory" class="headerlink" title="Count files number under certain directory"></a>Count files number under certain directory</h1><p>Sometimes we want to count files or directories number under a certian directory</p>
+<p>example:</p>
+<p>Count files or directories number under current dir<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -1 | wc -l</span><br></pre></td></tr></table></figure></p>
+<p>Recursively count files or dir number under the DIR_NAME dir<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find DIR_NAME -type f | wc -l</span><br></pre></td></tr></table></figure></p>
+<h1 id="Find-out-the-directory-size"><a href="#Find-out-the-directory-size" class="headerlink" title="Find out the directory size"></a>Find out the directory size</h1><p>Sometimes we want to know the total size of files under a certain directory</p>
+<p>example:</p>
+<p>Count the size of the directory, human readable way(such as 100M).<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh DIR_NAME</span><br></pre></td></tr></table></figure></p>
 
     
     
